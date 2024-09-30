@@ -1,0 +1,11 @@
+bot:
+  username: olzhastestbot
+  token: 5521006103:AAEpfMKvxON9Ek0CXKWctEZ1Sx4q70XPil8
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/aisulu_bot?characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update

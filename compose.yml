@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: bot:latest
+    restart: always
+    volumes:
+    - type: bind
+      source: ./file
+      target: /bot/file
+    ports:
+      - "8083:8083"

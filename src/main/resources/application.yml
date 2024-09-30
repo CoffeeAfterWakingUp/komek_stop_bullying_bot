@@ -1,0 +1,16 @@
+logging:
+  file:
+    name: logs/server.log
+spring:
+  application:
+    name: AisuluBot
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+server:
+  port: 8083
+file:
+  bot-instruction: ${user.dir}/file/Өтініш жазу нұсқаулығы _ Инструкция по написанию обращения.pdf
