@@ -27,8 +27,7 @@ public class Group {
 
     @OneToMany(
             mappedBy = "group",
-            cascade = CascadeType.ALL,
-            orphanRemoval = true
+            cascade = CascadeType.ALL
     )
     private List<Application> applications = new ArrayList<>();
 }
